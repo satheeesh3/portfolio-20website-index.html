@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satheesh Kumar - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; 
+            color: #e0e0e0; 
+            overflow-x: hidden;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+        body:active{
+            background-color: #fc9039;
+            transition: background-color 0.1s, transform 0.3s;
+
+        }
+        .navbar {
+            background-color: #1f1f1f; /* Darker background for navbar */
+            color: #e0e0e0;
+            padding: 20px;
+            position: static;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .profile-container {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+        .navbar img {
+            width: 350px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 75px;
+            transition: transform 0.3s ease;
+        }
+        .navbar img:hover {
+            transform: scale(1.1);
+        }
+        .navbar .info {
+            text-align: left;
+            flex: 2;
+        }
+        .navbar .title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #fff;
+            margin: 0;
+        }
+        .navbar .subtitle {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #b0b0b0;
+        }
+        .main-content {
+            padding-top: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .buttons a {
+            text-decoration: none;
+        }
+        .buttons button {
+        background-color: #1e88e5; /* Blue color for buttons */
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 150px; /* Fixed width for all buttons */
+        text-align: center; /* Center text inside the button */
+        transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+        height: 100px;
+
+}
+
+        .buttons button:hover {
+            background-color: #fd8a17; /* Darker orange on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Stronger shadow effect */
+            transform: scale(1.1);
+            
+        }
+        .section {
+            padding: 60px 20px;
+            background-color: #1e1e1e; /* Dark background for sections */
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, box-shadow 0.3s;
+            margin-top: 40px;
+
+        }
+        .section:hover {
+            background-color: #0c0c0c; 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); 
+        }
+        .section h2 {
+            color: #ff5722; 
+            border-bottom: 2px solid #ff5722;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section p {
+            line-height: 1.6;
+            color: #e0e0e0; 
+        }
+        .section ul {
+            list-style: none; 
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 15px;
+            position: relative; 
+            padding-left: 30px; 
+        }
+        .section ul li::before {
+            content: "•"; 
+            color: #ff7c02; 
+            font-size: 20px; 
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .contact-info p {
+            margin: 0;
+            padding: 5px 0;
+        }
+        .contact-info a {
+            color: #1e88e5;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f; /* Dark background for footer */
+            color: #e0e0e0;
+            position: static;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="profile-container">
+            <img src="picofme (2).png" alt="Satheesh Kumar">
+            <div class="info">
+                <div class="title">Satheesh Kumar</div>
+                <div class="subtitle">Software Developer & Designer</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="buttons">
+            <a href="#summary"><button>Summary</button></a>
+            <a href="#education"><button>Education</button></a>
+            <a href="#skills"><button>Technical Skills</button></a>
+            <a href="#experience"><button>Professional Experience</button></a>
+            <a href="#projects"><button >Projects</button></a>
+            <a href="#achievements"><button >Achievements</button></a>
+            <a href="#interests"><button>Interests</button></a>
+        </div>
+        <div id="summary" class="section">
+            <h2>Summary</h2>
+            <p>Motivated and dedicated web developer and Java developer with expertise in HTML, CSS, JavaScript, and Java. Proven ability to create efficient, reliable web applications with a strong foundation in programming principles. Experienced in front-end development, collaborating in team environments, and solving complex problems. Focused on driving software development projects and utilizing technical skills to advance innovation.</p>
+        </div>
+
+        <div id="education" class="section">
+            <h2>Education</h2>
+            <p><strong>B.Tech in Electronics and Communication Engineering</strong><br>
+                Raak College of Engineering and Technology, Pondicherry University<br>
+                Graduating June 2024 | CGPA: 8.1<br>
+                No arrear history</p>
+            <p>Relevant Coursework: Digital Signal Processing, 2G/3G/4G Technologies, Network Design, Roaming Support, Requirements Validation, Proposal Preparation, Troubleshooting, Hardware Design Languages and Programmable Logic, Microprocessors and Microcontrollers, Embedded Systems, Programming, Digital Signal Processing with MATLAB, C, C++ Programming for Embedded Systems.</p>
+        </div>
+
+        <div id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> HTML, CSS, JavaScript, Java basics</li>
+                <li><strong>Front-End Frameworks:</strong> React.js</li>
+                <li><strong>Tools:</strong> Git, Visual Studio Code, Jest</li>
+                <li><strong>Certifications:</strong> Java, Google Digital Marketing (Coursera), Google Digital E-commerce (Coursera), Agile Methodology (Cognizant)</li>
+            </ul>
+        </div>
+
+        <div id="experience" class="section">
+            <h2>Professional Experience</h2>
+            <p><strong>Quality Controller Intern</strong><br>
+                Integra Software Services, Puducherry | March 2024 – May 2024</p>
+            <ul>
+                <li>Developed and implemented best practices to manage and optimize content quality, enhancing skills in content management, project development, and effective communication.</li>
+                <li>Collaborated with the team to create and maintain high-quality standards, customize software solutions, and manage various features and technologies (iCompare, PDF Compare).</li>
+            </ul>
+        </div>
+
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <p><strong>Personal Portfolio Website</strong></p>
+            <ul>
+                <li>Developed and implemented a personal portfolio website using HTML, CSS, and JavaScript to effectively showcase technical skills and projects.</li>
+                <li>Designed and integrated a responsive layout, ensuring the website adapts seamlessly across desktop, tablet, and mobile devices for optimal user experience.</li>
+            </ul>
+
+            <p><strong>IoT-Based Monitoring and Detection System of Robbery</strong></p>
+            <ul>
+                <li>A multifaceted solution designed to enhance individual safety and security.</li>
+                <li>Employed a NodeMCU with an ESP8266 microcontroller to monitor and detect unauthorized access, providing real-time alerts and notifications to users.</li>
+            </ul>
+
+            <p><strong>Expense Tracker</strong></p>
+            <ul>
+                <li>Developed a React-based web application for tracking personal expenses, allowing users to add, delete, and view a summary of their spending habits.</li>
+                <li>Integrated features for balance management and transaction tracking, providing users with insightful financial summaries and reports.</li>
+            </ul>
+
+            <p><strong>E-Commerce Website</strong></p>
+            <ul>
+                <li>Created a fully functional e-commerce website using HTML, CSS, JavaScript, and React.js.</li>
+                <li>Implemented user authentication, product listings, and a shopping cart, enabling users to browse, select, and purchase products online.</li>
+            </ul>
+        </div>
+
+        <div id="achievements" class="section">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Top Performer Award at Integra Software Services for exceptional contributions to content quality management.</li>
+                <li>Best Project Award for the IoT-Based Monitoring and Detection System of Robbery at the annual college tech fest.</li>
+                <li>Dean’s List at Puducherry Technological University for academic excellence (2022-2024).</li>
+                <li>Achieved 2nd rank in SSLC at school.</li>
+            </ul>
+        </div>
+
+        <div id="interests" class="section">
+            <h2>Interests</h2>
+            <ul>
+                <li>Drawing & Design</li>
+                <li>Logo Creating</li>
+                <li>Fitness and Gym</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Contact:</strong></p>
+
+            <p>Email: <a href="mailto:satheeshengg333@gmail.com">satheeshengg333@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/satheeshkumarengg33" target="_blank">linkedin.com/in/satheeshkumarengg33</a></p>
+        </div>
+    </footer>
+</body>
+</html>
